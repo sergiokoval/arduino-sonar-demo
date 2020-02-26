@@ -1,4 +1,3 @@
-
 int ledPin = 8;
 int triggerPin = 7;
 int echoPin = 2;
@@ -7,7 +6,8 @@ int blinkDelay = 500;
 long duration;
 int distance;
 
-void setup() {
+void setup() 
+{
   // put your setup code here, to run once:
   Serial.begin(9600);
   pinMode(ledPin,OUTPUT);
@@ -41,8 +41,7 @@ void loop()
   Serial.print("Distance in cm: ");
   Serial.println(distance);
   ping();  
-  blink();
-   
+  blink();   
 }
 
 
